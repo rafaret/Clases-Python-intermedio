@@ -1,0 +1,7 @@
+# Primera linea - Subject
+
+Jira: #DATA-1234 [...]
+
+# Resto líneas - Body
+
+# Aquí pongo cosas solo si quiero una descripción mas larga
