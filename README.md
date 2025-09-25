@@ -13,8 +13,12 @@ Este es el curso de Tajamar impartido por Joaquín Hernández. Nos servirá para
 
 
 Cada día de clase tendrá su propia carpeta en la raíz del proyecto. Tanto para ejercicios como para apuntes. 
+
 Cada día subiremos una carpeta **`apuntes`*, donde se iran añadiendo los apuntes de ese dia. Además, hay una carpeta **`proyecto`* donde se irá completando un proyecto que nos llevará varios días.
+
 Existe una carpeta **`ejercicios`**, donde se irán añadiendo los ejercicios de cada sesión. **IMPORTANTE**: Para poder ir subiendo los ejercicios, se debrá hacer una *pull request* a este repositorio, **nunca a `main` sino a `development`** 
+
+
 Seguimos esta estructura:
 
 
