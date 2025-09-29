@@ -1,13 +1,34 @@
-from apuntes import Bombilla, Circuito
-
-mi_circuito = Circuito()
+from apuntes import Bombilla, Ventilador, Circuito
+from apuntes import AparatoEncendible
 
 def test_circuito():
-    # Bombilla empieza apagada
-    assert mi_circuito.bombilla.on_off is False
-    # Encendemos bombilla
+    ventilador = Ventilador()
+    mi_circuito = Circuito(ventilador)
+
+    assert mi_circuito.aparato.on_off is False
+
     mi_circuito.click()
-    assert mi_circuito.bombilla.on_off is True
-    # Apagamos bombilla
+    assert mi_circuito.aparato.on_off is True
+
     mi_circuito.click()
-    assert mi_circuito.bombilla.on_off is False
+    assert mi_circuito.aparato.on_off is False
+
+def test_cambio_aparato():
+    ventilador = Ventilador()
+    mi_circuito = Circuito(ventilador)
+    mi_circuito.click()  # Encendemos
+    assert mi_circuito.aparato.on_off is True
+    bombilla = Bombilla()
+    mi_circuito.aparato = bombilla
+    mi_circuito.click()  # Encendemos
+    assert mi_circuito.aparato.on_off is True
+
+def test_cambio_nuevo_aparato():
+    class MandoTele(AparatoEncendible):
+        pass
+
+    mando = MandoTele()
+    mi_circuito = Circuito(mando)
+    assert mi_circuito.aparato.on_off is False
+    mi_circuito.click()
+    assert mi_circuito.aparato.on_off is True
