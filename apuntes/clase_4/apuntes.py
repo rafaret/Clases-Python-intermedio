@@ -17,3 +17,14 @@ class Circuito:
     def click(self):
         self.aparato.on_off = not self.aparato.on_off
 
+# Ejercicio
+# Pacientes y Medicos que les administran Terapias
+
+class Paciente:
+    pass
+
+class Medico:
+    pass # Interactua con Pacientes!
+
+class Terapia:
+    pass  # Medicina farmacologica, medicina fisica, mediciona tradicional, etc...

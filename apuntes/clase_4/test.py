@@ -1,5 +1,6 @@
 from apuntes import Bombilla, Ventilador, Circuito
 from apuntes import AparatoEncendible
+from apuntes import Paciente, Medico, Terapia
 
 def test_circuito():
     ventilador = Ventilador()
@@ -32,3 +33,12 @@ def test_cambio_nuevo_aparato():
     assert mi_circuito.aparato.on_off is False
     mi_circuito.click()
     assert mi_circuito.aparato.on_off is True
+
+# Hay que completar un poco este test!
+
+paciente = Paciente()
+medico = Medico()
+terapia = Terapia()
+
+def test_paciente():
+    assert paciente.nombre == "Juan"
