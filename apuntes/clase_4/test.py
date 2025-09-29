@@ -6,8 +6,8 @@ def test_circuito():
     # Bombilla empieza apagada
     assert mi_circuito.bombilla.on_off is False
     # Encendemos bombilla
-    mi_circuito.encender()
+    mi_circuito.click()
     assert mi_circuito.bombilla.on_off is True
     # Apagamos bombilla
-    mi_circuito.apagar()
+    mi_circuito.click()
     assert mi_circuito.bombilla.on_off is False

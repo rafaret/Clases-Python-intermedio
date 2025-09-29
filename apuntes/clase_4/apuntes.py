@@ -6,8 +6,5 @@ class Circuito:
     def __init__(self):
         self.bombilla = Bombilla()
 
-    def encender(self):
-        pass  # Enciende la bombilla
-
-    def apagar(self):
-        pass  # Apaga la bombilla
+    def click(self):
+        self.bombilla.on_off = False if self.bombilla.on_off else True
