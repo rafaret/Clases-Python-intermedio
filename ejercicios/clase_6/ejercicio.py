@@ -3,7 +3,6 @@ import pytest
 """
 Ejercicio para casa (traer mañana hecho):
  
-1 - Crear una Playlist con Canciones, y que esa playlist se pueda tratar como una lista
 2 - Crear un sistema de callback en el que se valide una contraseña (la funcion de validacion sera definida por el administrador!) -._/
 """
 
